@@ -2,8 +2,7 @@
 <StackLayout
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="Direction.Controls.ScrollListView"
-    xmlns:controls="clr-namespace:Direction.Controls"
+    x:Class="ScrollListView.ScrollListView"
     >
 
     <ScrollView x:Name="scrollView">

@@ -2,15 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using System.Linq;
 using Xamarin.Forms;
 using System.Collections.Specialized;
-using NObservable;
 using System.Reflection;
-using KellermanSoftware.CompareNetObjects;
 
-namespace Direction.Controls
+namespace ScrollListView
 {
 
     public partial class ScrollListView : StackLayout
