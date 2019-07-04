@@ -7,15 +7,17 @@ using Xamarin.Forms;
 using System.Collections.Specialized;
 using System.Reflection;
 
-namespace ScrollListView
+namespace Control
 {
 
-    public partial class ScrollListView : StackLayout
+    public class ScrollListView : StackLayout
     {
+
+        ScrollView scrollView;
 
         public StackLayout Container
         {
-            get { return container; }
+            get { return scrollView.Content as StackLayout; }
         }
 
         public static readonly BindableProperty EntryProperty =
@@ -170,7 +172,7 @@ namespace ScrollListView
 
                     foreach (var newItem in e.NewItems)
                     {
-                        container.Children.Insert(index++, AddFutureHeight(futureHeight, newItem));
+                        Container.Children.Insert(index++, AddFutureHeight(futureHeight, newItem));
                     }
                     break;
 
@@ -178,19 +180,19 @@ namespace ScrollListView
                     Console.WriteLine("Move");
                     var moveItem = items[e.OldStartingIndex];
 
-                    container.Children.RemoveAt(e.OldStartingIndex);
-                    container.Children.Insert(e.NewStartingIndex, ViewFor(moveItem));
+                    Container.Children.RemoveAt(e.OldStartingIndex);
+                    Container.Children.Insert(e.NewStartingIndex, ViewFor(moveItem));
                     break;
 
                 case NotifyCollectionChangedAction.Remove:
 
-                    container.Children.RemoveAt(e.OldStartingIndex);
+                    Container.Children.RemoveAt(e.OldStartingIndex);
                     break;
 
                 case NotifyCollectionChangedAction.Replace:
                     Console.WriteLine("Replace. oldIndex: " + e.OldStartingIndex + " and newIndex: " + e.NewStartingIndex);
-                    container.Children.RemoveAt(e.OldStartingIndex);
-                    container.Children.Insert(e.NewStartingIndex, AddFutureHeight(futureHeight, items[e.NewStartingIndex]));
+                    Container.Children.RemoveAt(e.OldStartingIndex);
+                    Container.Children.Insert(e.NewStartingIndex, AddFutureHeight(futureHeight, items[e.NewStartingIndex]));
                     break;
 
                 case NotifyCollectionChangedAction.Reset:
@@ -199,14 +201,14 @@ namespace ScrollListView
                     break;
             }
             
-            if (container.Children.Count >= MaxItemsShown) // is correct
+            if (Container.Children.Count >= MaxItemsShown) // is correct
             {
                 Task.WhenAll(futureHeight).ContinueWith((args) =>
                 {
                     double maxHeight = 0;
                     for (int i = 0; i < MaxItemsShown; i++)
                     {
-                        maxHeight += container.Children[i].Height;
+                        maxHeight += Container.Children[i].Height;
                     }
                     scrollView.HeightRequest = maxHeight;
                 });
@@ -255,7 +257,7 @@ namespace ScrollListView
 
         private void BuildAll() // keep in mind when setting a height - SizeChanged is never fired - so MaxItemsShown is inactive
         {
-            container.Children.Clear();
+            Container.Children.Clear();
             int index = 0;
             List<Task<double>> setMaxHeight = new List<Task<double>>();
             foreach (var value in ItemsSource)
@@ -280,7 +282,7 @@ namespace ScrollListView
             var build = ViewFor(value);
             AsyncEventListener getSize = new AsyncEventListener();
             build.SizeChanged += getSize.Listen;
-            container.Children.Add(build);
+            Container.Children.Add(build);
             return getSize.Successfully; // or width if supporting horizontal and used like list/carousel
         }
 
@@ -309,7 +311,7 @@ namespace ScrollListView
                 }
 
                 foreach(var g in original.GestureRecognizers)
-                {
+                {Da
                     var gClone = Force.DeepCloner.DeepClonerExtensions.ShallowClone(g); // creates exact clone
                     Console.WriteLine("added : " + gClone);
                     originalClone.GestureRecognizers.Add(gClone);
@@ -374,10 +376,13 @@ namespace ScrollListView
         }
         public ScrollListView()
         {
-            InitializeComponent();
+            // InitializeComponent();
 
             // listView.HasUnevenRows = true; // fix withcollectioview as well
-            
+            scrollView = new ScrollView();
+            StackLayout container = new StackLayout();
+            scrollView.Content = container;
+            this.Children.Add(scrollView); // subclass contenview instead of stacklayout for preformence?
         }
         private void OnBindingContextChanged(object sender, EventArgs e)
         {
