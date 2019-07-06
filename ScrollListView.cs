@@ -2,11 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Linq;
 using Xamarin.Forms;
 using System.Collections.Specialized;
 using System.Reflection;
-
+using System.Linq;
 namespace Control
 {
 
@@ -20,24 +19,6 @@ namespace Control
             get { return scrollView.Content as StackLayout; }
         }
 
-        public static readonly BindableProperty EntryProperty =
-            BindableProperty.Create("Entry",
-                typeof(Entry),
-                typeof(ScrollListView),
-                default(Entry),
-                propertyChanged: EntryPropertyChanged);
-
-        public Entry Entry
-        {
-            get { return (Entry)GetValue(EntryProperty); }
-            set { SetValue(EntryProperty, value); }
-        }
-
-        private static void EntryPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-        {
-            Console.WriteLine("bindable: " + bindable);
-            Console.WriteLine("newValue: " + newValue);
-        }
         /* might support
         public static readonly BindableProperty ItemTemplateProperty =
             BindableProperty.Create(propertyName: "ItemTemplate",
@@ -77,15 +58,15 @@ namespace Control
         public static readonly BindableProperty ItemsSourceProperty =
             BindableProperty.Create(
                 propertyName: "ItemsSource",
-                returnType: typeof(IEnumerable),
+                returnType: typeof(IEnumerable<object>),
                 declaringType: typeof(ScrollListView),
                 defaultValue: default(IEnumerable),
                 propertyChanged: ItemsSourcePropertyChanged);
 
-        public IEnumerable ItemsSource
+        public IEnumerable<object> ItemsSource
         {
-            get { return (IEnumerable)GetValue(ItemsSourceProperty); }
-            set { Console.WriteLine("set agg: " + value); SetValue(ItemsSourceProperty, value); }
+            get { return (IEnumerable<object>)GetValue(ItemsSourceProperty); }
+            set { SetValue(ItemsSourceProperty, value); }
         }
 
         // require a observablecollection to react on changes in the list. just like ListView
@@ -122,28 +103,6 @@ namespace Control
                     observable.CollectionChanged += instance.CollectionChanged;
                 }
             }
-
-            /* For using mobx this has to be fixed https://github.com/kekekeks/NObservable/issues/3
-            NObservable.Observe.Autorun(() =>
-            {
-                var l = instance.list;
-                Console.WriteLine("list changed: " + l);
-                var children = instance.container.Children as List<View>;
-                var b = children.Select((View view) => view.BindingContext);
-                Console.WriteLine("bindingContexts was: ");
-                foreach(var x in b)
-                {
-                    Console.WriteLine(x);
-                }
-                var changes = b.Except(l);
-                Console.WriteLine("Changes where: ");
-                foreach(var c in changes)
-                {
-                    Console.WriteLine(c);
-                }
-
-            });
-            */
         }
 
         // https://github.com/DottorPagliaccius/Xamarin-Custom-Controls/blob/master/src/Xamarin.CustomControls.Repeater/RepeaterView.cs
@@ -258,6 +217,17 @@ namespace Control
         private void BuildAll() // keep in mind when setting a height - SizeChanged is never fired - so MaxItemsShown is inactive
         {
             Container.Children.Clear();
+
+            var widthRequest = scrollView.WidthRequest;
+            var heightRequest = scrollView.HeightRequest;
+
+            if (ItemsSource.Count() >= MaxItemsShown) // is correct
+            {
+                // prevent flickering on initial render
+                scrollView.WidthRequest = 0.01;
+                scrollView.HeightRequest = 0.01;
+            }
+
             int index = 0;
             List<Task<double>> setMaxHeight = new List<Task<double>>();
             foreach (var value in ItemsSource)
@@ -269,11 +239,21 @@ namespace Control
                 }
                 index++;
             }
-            Task.WhenAll(setMaxHeight).ContinueWith(async (arg) =>
+            if (Container.Children.Count >= MaxItemsShown) // is correct
             {
-                double[] d = await arg;
-                scrollView.HeightRequest = d.Sum();
-            });
+                Task.WhenAll(setMaxHeight).ContinueWith((args) =>
+                {
+                    double maxHeight = 0;
+                    for (int i = 0; i < MaxItemsShown; i++)
+                    {
+                        maxHeight += Container.Children[i].Height;
+                    }
+                    scrollView.WidthRequest = widthRequest;
+                    scrollView.HeightRequest = !maxHeight.Equals(0) ? maxHeight : heightRequest;
+
+                    // scrollView.HeightRequest = maxHeight; // flickering on intial render
+                });
+            }
         }
         
         public Task<double> Render(object value)
@@ -383,6 +363,7 @@ namespace Control
             StackLayout container = new StackLayout();
             scrollView.Content = container;
             this.Children.Add(scrollView); // subclass contenview instead of stacklayout for preformence?
+            Spacing = 0;
         }
         private void OnBindingContextChanged(object sender, EventArgs e)
         {
@@ -458,4 +439,7 @@ namespace Control
     }
     // When new row is added - might scroll down to it by defalt
     // When scolling on slider the scroll view won't scroll. It does not help wrapping content in a DataTemplate. tested with CollectionView and same problem
+    // No touch feedbackon ios with button https://forums.xamarin.com/discussion/72586/no-feedback-when-tap-a-button-inside-a-scrollview-only-click-gives-feedback-ios
+    // Sometimes ugly initial render. Is there a better way to predict/precalulcate heighrequest? FIXED
+    // Consider making a generic futureBounds etxension method and use that instead.
 }
