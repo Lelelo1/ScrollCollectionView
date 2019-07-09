@@ -220,14 +220,14 @@ namespace Control
 
             var widthRequest = WidthRequest;
             var heightRequest = HeightRequest;
-            /*
+            
             if (ItemsSource.Count() >= MaxItemsShown) // is correct
             {
                 // prevent flickering on initial render
-                scrollView.WidthRequest = 0.01;
-                scrollView.HeightRequest = 0.01;
+                WidthRequest = 0.01;
+                HeightRequest = 0.01;
             }
-            */
+            
             int index = 0;
             List<Task<double>> setMaxHeight = new List<Task<double>>();
             foreach (var value in ItemsSource)
