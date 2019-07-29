@@ -1,0 +1,9 @@
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.csproj.CoreCompileInputs.cache
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.AssemblyInfoInputs.cache
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.AssemblyInfo.cs
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/bin/Debug/netstandard2.0/ScrollCollectionView.deps.json
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/bin/Debug/netstandard2.0/ScrollCollectionView.dll
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/bin/Debug/netstandard2.0/ScrollCollectionView.pdb
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.dll
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.pdb

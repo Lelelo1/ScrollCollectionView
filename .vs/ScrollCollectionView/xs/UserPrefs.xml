@@ -1,21 +1,34 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="ScrollCollectionView/Class1.cs">
+﻿<Properties StartupConfiguration="{8429AB4F-7368-485B-82D4-5C0E8DFA0873}|Default">
+  <MonoDevelop.Ide.ItemProperties.ScrollCollectionViewTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E76C261E-9F00-4B94-ACA7-F6496E964AC1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScrollCollectionView/ScrollCollectionView.cs">
     <Files>
-      <File FileName="ScrollCollectionView/Class1.cs" Line="1" Column="1" />
+      <File FileName="ScrollCollectionViewTest/Views/TestPage.xaml.cs" Line="15" Column="41" />
+      <File FileName="ScrollCollectionViewTest/Views/TestPage.xaml" Line="35" Column="26" />
+      <File FileName="ScrollCollectionView/ScrollCollectionView.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ScrollCollectionView" expanded="True">
             <Node name="ScrollCollectionView" expanded="True">
-              <Node name="Class1.cs" selected="True" />
+              <Node name="ScrollCollectionView.cs" selected="True" />
             </Node>
+            <Node name="ScrollCollectionViewTest" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="TestPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+            </Node>
+            <Node name="ScrollCollectionViewTest.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ScrollCollectionView FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
