@@ -147,7 +147,6 @@ namespace Namespace
                 case NotifyCollectionChangedAction.Remove:
 
                     Container.Children.RemoveAt(e.OldStartingIndex);
-
                     break;
 
                 case NotifyCollectionChangedAction.Replace:

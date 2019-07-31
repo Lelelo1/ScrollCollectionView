@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{8429AB4F-7368-485B-82D4-5C0E8DFA0873}|Default">
   <MonoDevelop.Ide.ItemProperties.ScrollCollectionViewTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E76C261E-9F00-4B94-ACA7-F6496E964AC1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ScrollCollectionView/ScrollCollectionView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScrollCollectionViewTest/Views/TestPage.xaml">
     <Files>
       <File FileName="ScrollCollectionViewTest/Views/TestPage.xaml.cs" Line="31" Column="55" />
       <File FileName="ScrollCollectionViewTest/Views/TestPage.xaml" Line="34" Column="38" />
@@ -10,10 +10,10 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ScrollCollectionView" expanded="True">
-            <Node name="ScrollCollectionView" expanded="True" selected="True" />
+            <Node name="ScrollCollectionView" expanded="True" />
             <Node name="ScrollCollectionViewTest" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="TestPage.xaml" expanded="True" />
+                <Node name="TestPage.xaml" expanded="True" selected="True" />
               </Node>
             </Node>
           </Node>

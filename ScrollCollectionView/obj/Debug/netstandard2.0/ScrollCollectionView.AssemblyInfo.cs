@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lelelo1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("None")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("A control that mimic CollectionView but has dymanic flexible height")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("A control that mimic CollectionView but has dymanic flexible height.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScrollCollectionView")]
