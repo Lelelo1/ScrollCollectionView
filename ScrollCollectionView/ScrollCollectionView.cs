@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using System.Collections.Specialized;
 using System.Reflection;
 using System.Linq;
-namespace ScrollCollectionView
+namespace Namespace
 {
 
     public class ScrollCollectionView : StackLayout
