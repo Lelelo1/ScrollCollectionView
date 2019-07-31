@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ScrollCollectionViewTest.Views.TestPage"
     xmlns:viewModels="clr-namespace:ScrollCollectionViewTest.ViewModels"
-    xmlns:scrollCollectionView="clr-namespace:ScrollCollectionView;assembly=ScrollCollectionView"
+    xmlns:scrollCollectionView="clr-namespace:Namespace;assembly=ScrollCollectionView"
     >
 
     

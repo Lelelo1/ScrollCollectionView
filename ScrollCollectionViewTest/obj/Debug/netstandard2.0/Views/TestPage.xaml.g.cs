@@ -26,7 +26,7 @@ namespace ScrollCollectionViewTest.Views {
         private global::Xamarin.Forms.DataTemplate specialTemplate;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::ScrollCollectionView.ScrollCollectionView scrollCollectionView;
+        private global::Namespace.ScrollCollectionView scrollCollectionView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -34,7 +34,7 @@ namespace ScrollCollectionViewTest.Views {
             testViewModel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ScrollCollectionViewTest.ViewModels.TestViewModel>(this, "testViewModel");
             defaultTemplate = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DataTemplate>(this, "defaultTemplate");
             specialTemplate = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DataTemplate>(this, "specialTemplate");
-            scrollCollectionView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ScrollCollectionView.ScrollCollectionView>(this, "scrollCollectionView");
+            scrollCollectionView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Namespace.ScrollCollectionView>(this, "scrollCollectionView");
         }
     }
 }

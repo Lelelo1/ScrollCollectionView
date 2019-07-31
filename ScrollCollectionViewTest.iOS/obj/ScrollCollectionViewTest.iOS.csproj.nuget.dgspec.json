@@ -23,6 +23,7 @@
           "netstandard2.0"
         ],
         "sources": {
+          "/Users/leowetterek/Projects/TestNuGets/LocalNuGets": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
@@ -81,6 +82,7 @@
           "xamarinios10"
         ],
         "sources": {
+          "/Users/leowetterek/Projects/TestNuGets/LocalNuGets": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,6 +140,7 @@
           "netstandard2.0"
         ],
         "sources": {
+          "/Users/leowetterek/Projects/TestNuGets/LocalNuGets": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
           "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
