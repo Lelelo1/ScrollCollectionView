@@ -27,8 +27,8 @@ namespace ScrollCollectionViewTest.Views
         }
         void Handle_Remove(object s, EventArgs e)
         {
-            
-            testViewModel.TestObservableCollection[0] = null;
+
+            testViewModel.TestObservableCollection.Remove("one");
         }
     }
 }

@@ -27,13 +27,12 @@
 
     <ContentPage.Content>
         <StackLayout BackgroundColor="gray">
-            <FlexLayout JustifyContent="SpaceAround" AlignItems="Center">
-                <scrollCollectionView:ScrollCollectionView
+            <scrollCollectionView:ScrollCollectionView
                     x:Name="scrollCollectionView"
                     ItemsSource="{Binding TestObservableCollection}"
-                    BackgroundColor="blue"
+                    BackgroundColor="silver"
+                    MaxItemsShown="5"
                 />
-            </FlexLayout>
             <FlexLayout VerticalOptions="EndAndExpand" JustifyContent="SpaceBetween" Direction="Row">
                 <Button Text="Add" BackgroundColor="Green" Clicked="Handle_Add"/>
                 <Button Text="Remove" BackgroundColor="Red" Clicked="Handle_Remove"/>

@@ -14,5 +14,6 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xamarin.forms/4.1.0.618606/build/Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms/4.1.0.618606/build/Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)nuget.build.packaging/0.2.5-dev.8/build/NuGet.Build.Packaging.props" Condition="Exists('$(NuGetPackageRoot)nuget.build.packaging/0.2.5-dev.8/build/NuGet.Build.Packaging.props')" />
   </ImportGroup>
 </Project>

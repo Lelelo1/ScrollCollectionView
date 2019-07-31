@@ -12,12 +12,13 @@ namespace Namespace
     public class ScrollCollectionView : StackLayout
     {
 
-        ScrollView scrollView;
+        public ScrollView scrollView;
 
         public StackLayout Container
         {
             get { return scrollView.Content as StackLayout; }
         }
+        // stackLayout < scrollView < stackLayout
 
         /* might support
         public static readonly BindableProperty ItemTemplateProperty =
@@ -146,6 +147,7 @@ namespace Namespace
                 case NotifyCollectionChangedAction.Remove:
 
                     Container.Children.RemoveAt(e.OldStartingIndex);
+
                     break;
 
                 case NotifyCollectionChangedAction.Replace:
@@ -159,8 +161,8 @@ namespace Namespace
                     BuildAll();
                     break;
             }
-            
-            if (Container.Children.Count >= MaxItemsShown) // is correct
+
+            if(MaxItemsShown >= 0)
             {
                 Task.WhenAll(futureHeight).ContinueWith((args) =>
                 {
@@ -172,7 +174,7 @@ namespace Namespace
                     scrollView.HeightRequest = maxHeight;
                 });
             }
-            
+
         }
         private View AddFutureHeight(List<Task<double>> futureHeight, object newItem)
         {
@@ -256,7 +258,7 @@ namespace Namespace
                 });
             }
             */
-            if (Container.Children.Count >= MaxItemsShown) // is correct
+            if(MaxItemsShown >= 0)
             {
                 Task.WhenAll(setMaxHeight).ContinueWith((args) =>
                 {
@@ -356,7 +358,7 @@ namespace Namespace
                 propertyName: "MaxItemsShownProperty",
                 returnType: typeof(int),
                 declaringType: typeof(ScrollCollectionView),
-                defaultValue: 5, // or what is the max suggestions given by googleplacesautocomplete?
+                defaultValue: -1, // what if 0 is specified?
                 propertyChanged: MaxItemsShownPropertyChanged);
 
         public int MaxItemsShown

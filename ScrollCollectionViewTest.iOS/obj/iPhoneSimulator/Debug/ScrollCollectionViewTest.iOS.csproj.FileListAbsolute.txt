@@ -44,7 +44,9 @@
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/ScrollCollectionViewTest.dll
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/ScrollCollectionView.dll
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/ScrollCollectionViewTest.pdb
+/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/ScrollCollectionView.pdb
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-12.2/ibtool/_BundleResourceWithLogicalName.items
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-12.2/actool/_PartialAppManifest.items
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-12.2/actool/_BundleResourceWithLogicalName.items
@@ -66,5 +68,3 @@
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/iPhoneSimulator/Debug/ScrollCollectionViewTest.iOS.csproj.CopyComplete
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/iPhoneSimulator/Debug/ScrollCollectionViewTest.iOS.exe
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/iPhoneSimulator/Debug/ScrollCollectionViewTest.iOS.pdb
-/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/ScrollCollectionView.dll
-/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/bin/iPhoneSimulator/Debug/ScrollCollectionView.pdb
