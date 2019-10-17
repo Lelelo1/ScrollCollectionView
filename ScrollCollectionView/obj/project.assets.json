@@ -26,16 +26,6 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "NuGet.Build.Packaging/0.2.5-dev.8": {
-        "type": "package",
-        "build": {
-          "build/NuGet.Build.Packaging.props": {},
-          "build/NuGet.Build.Packaging.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/NuGet.Build.Packaging.targets": {}
-        }
-      },
       "Xamarin.Forms/4.1.0.618606": {
         "type": "package",
         "compile": {
@@ -72,7 +62,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "lNqxWjIkIucKLb++lhwav/2cUD1n2HFynS2YcFDsZsZaN5KJjPJ/QzYKYoCiYxJrl3uQyPFZddiJv8B0vdNedg==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -197,42 +187,6 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
-      ]
-    },
-    "NuGet.Build.Packaging/0.2.5-dev.8": {
-      "sha512": "S8hTZ7Gb34XBXKsN7oCaqNmEQ9OortT0P+PFNquZHYvbi1UbRvZFVcxVDbM2lvYiqsnEcaccYThDOgClvywIsA==",
-      "type": "package",
-      "path": "nuget.build.packaging/0.2.5-dev.8",
-      "files": [
-        ".nupkg.metadata",
-        "build/ApiIntersect.exe",
-        "build/ApiIntersect.exe.config",
-        "build/GenerateReferenceAssembly.csproj",
-        "build/ICSharpCode.Decompiler.dll",
-        "build/ICSharpCode.NRefactory.CSharp.dll",
-        "build/ICSharpCode.NRefactory.Cecil.dll",
-        "build/ICSharpCode.NRefactory.Xml.dll",
-        "build/ICSharpCode.NRefactory.dll",
-        "build/Mono.Cecil.Mdb.dll",
-        "build/Mono.Cecil.Pdb.dll",
-        "build/Mono.Cecil.Rocks.dll",
-        "build/Mono.Cecil.dll",
-        "build/Mono.Options.dll",
-        "build/NuGet.Build.Packaging.Authoring.props",
-        "build/NuGet.Build.Packaging.Authoring.targets",
-        "build/NuGet.Build.Packaging.Compatibility.props",
-        "build/NuGet.Build.Packaging.Inference.targets",
-        "build/NuGet.Build.Packaging.Legacy.props",
-        "build/NuGet.Build.Packaging.Legacy.targets",
-        "build/NuGet.Build.Packaging.ReferenceAssembly.targets",
-        "build/NuGet.Build.Packaging.Tasks.dll",
-        "build/NuGet.Build.Packaging.Tasks.pdb",
-        "build/NuGet.Build.Packaging.Version.props",
-        "build/NuGet.Build.Packaging.props",
-        "build/NuGet.Build.Packaging.targets",
-        "buildMultiTargeting/NuGet.Build.Packaging.targets",
-        "nuget.build.packaging.0.2.5-dev.8.nupkg.sha512",
-        "nuget.build.packaging.nuspec"
       ]
     },
     "Xamarin.Forms/4.1.0.618606": {
@@ -485,41 +439,39 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "NuGet.Build.Packaging >= 0.2.5-dev.8",
       "Xamarin.Forms >= 4.1.0.618606"
     ]
   },
   "packageFolders": {
-    "/Users/leowetterek/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Leo\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/ScrollCollectionView.csproj",
+      "projectUniqueName": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionView\\ScrollCollectionView.csproj",
       "projectName": "ScrollCollectionView",
-      "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/ScrollCollectionView.csproj",
-      "packagesPath": "/Users/leowetterek/.nuget/packages/",
-      "outputPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/",
+      "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionView\\ScrollCollectionView.csproj",
+      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionView\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/leowetterek/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "/Users/leowetterek/Projects/TestNuGets/LocalNuGets": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Leo\\Desktop": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -541,22 +493,22 @@
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
-          "NuGet.Build.Packaging": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[0.2.5-dev.8, )"
-          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.1.0.618606, )"
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

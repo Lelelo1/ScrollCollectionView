@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ScrollCollectionView</id>
+    <version>1.0.1</version>
+    <title>ScrollCollectionView</title>
+    <authors>Lelelo1</authors>
+    <owners>Lelelo1</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Lelelo1/ScrollCollectionView/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Lelelo1/ScrollCollectionView</projectUrl>
+    <description>A control that mimic CollectionView but has dymanic flexible height.</description>
+    <releaseNotes>Removed Console logs</releaseNotes>
+    <copyright>None</copyright>
+    <tags>Xamarin.Forms, CollectionView, list, height, dynamic, flexible, listView, control</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Xamarin.Forms" version="4.1.0.618606" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\bin\Debug\netstandard2.0\ScrollCollectionView.dll" target="lib\netstandard2.0\ScrollCollectionView.dll" />
+  </files>
+</package>

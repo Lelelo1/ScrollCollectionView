@@ -54,7 +54,7 @@ namespace Namespace
         }
         private static void TextPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            Console.WriteLine("Text changed: " + newValue);
+            // Console.WriteLine("Text changed: " + newValue);
         }
         public static readonly BindableProperty ItemsSourceProperty =
             BindableProperty.Create(
@@ -77,8 +77,9 @@ namespace Namespace
             // https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Core/ItemsView.cs
             // https://github.com/HoussemDellai/Xamarin-Forms-RepeaterView/blob/master/Repeater/Repeater/RepeaterView.cs
             // can probably improve this rendering...
-            Console.WriteLine("instance bindingContext is: " + ((ScrollCollectionView)bindable).BindingContext);
-            Console.WriteLine("ItemsSource changed: " + newValue);
+
+            // Console.WriteLine("instance bindingContext is: " + ((ScrollCollectionView)bindable).BindingContext);
+            // Console.WriteLine("ItemsSource changed: " + newValue);
 
             var instance = bindable as ScrollCollectionView;
 
@@ -128,7 +129,7 @@ namespace Namespace
                 case NotifyCollectionChangedAction.Add:
 
                     var index = e.NewStartingIndex;
-                    Console.WriteLine("Add");
+                    // Console.WriteLine("Add");
 
                     foreach (var newItem in e.NewItems)
                     {
@@ -137,7 +138,7 @@ namespace Namespace
                     break;
 
                 case NotifyCollectionChangedAction.Move:
-                    Console.WriteLine("Move");
+                    // Console.WriteLine("Move");
                     var moveItem = items[e.OldStartingIndex];
 
                     Container.Children.RemoveAt(e.OldStartingIndex);
@@ -150,7 +151,7 @@ namespace Namespace
                     break;
 
                 case NotifyCollectionChangedAction.Replace:
-                    Console.WriteLine("Replace. oldIndex: " + e.OldStartingIndex + " and newIndex: " + e.NewStartingIndex);
+                   //  Console.WriteLine("Replace. oldIndex: " + e.OldStartingIndex + " and newIndex: " + e.NewStartingIndex);
                     Container.Children.RemoveAt(e.OldStartingIndex);
                     Container.Children.Insert(e.NewStartingIndex, AddFutureHeight(futureHeight, items[e.NewStartingIndex]));
                     break;
@@ -195,11 +196,11 @@ namespace Namespace
         public Func<object, DataTemplate> Build
         {
             get { return (Func<object, DataTemplate>)GetValue(BuildProperty); }
-            set { Console.WriteLine("set build: " + value); SetValue(BuildProperty, value); }
+            set { /*Console.WriteLine("set build: " + value);*/ SetValue(BuildProperty, value); }
         }
         private static void BuildPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
-            Console.WriteLine("build changed");
+            // Console.WriteLine("build changed");
             var instance = bindable as ScrollCollectionView;
 
             if (instance == null) return;
@@ -422,7 +423,7 @@ namespace Namespace
             {
                 if (sender is View view) // sufficiently supporting all controls?
                 {
-                    Console.WriteLine("Got height");
+                    // Console.WriteLine("Got height");
                     view.SizeChanged -= this.Listen;
                     return view.Height;
                 }
@@ -437,7 +438,7 @@ namespace Namespace
             this.eventArgs = eventArgs;
             if (!Successfully.IsCompleted)
             {
-                Console.WriteLine("running synchornisously");
+                //Console.WriteLine("running synchornisously");
                 Successfully.RunSynchronously();
 
             }

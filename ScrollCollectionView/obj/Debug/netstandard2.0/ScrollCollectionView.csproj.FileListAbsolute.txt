@@ -7,3 +7,12 @@
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.dll
 /Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/obj/Debug/netstandard2.0/ScrollCollectionView.pdb
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\obj\Debug\netstandard2.0\ScrollCollectionView.dll
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\obj\Debug\netstandard2.0\ScrollCollectionView.pdb
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\bin\Debug\netstandard2.0\ScrollCollectionView.deps.json
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\bin\Debug\netstandard2.0\ScrollCollectionView.dll
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\bin\Debug\netstandard2.0\ScrollCollectionView.pdb
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\obj\Debug\netstandard2.0\ScrollCollectionView.csprojAssemblyReference.cache
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\obj\Debug\netstandard2.0\ScrollCollectionView.AssemblyInfoInputs.cache
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\obj\Debug\netstandard2.0\ScrollCollectionView.AssemblyInfo.cs
+C:\Users\Leo\Projects\ScrollCollectionView\ScrollCollectionView\obj\Debug\netstandard2.0\XamlC.stamp

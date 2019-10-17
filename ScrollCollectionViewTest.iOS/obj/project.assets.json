@@ -149,7 +149,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "ScrollCollectionView/1.0.0": {
+      "ScrollCollectionView/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -166,7 +166,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "ScrollCollectionView": "1.0.0",
+          "ScrollCollectionView": "1.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.618606"
         },
@@ -326,7 +326,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "ScrollCollectionView/1.0.0": {
+      "ScrollCollectionView/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -343,7 +343,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "ScrollCollectionView": "1.0.0",
+          "ScrollCollectionView": "1.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.618606"
         },
@@ -503,7 +503,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "ScrollCollectionView/1.0.0": {
+      "ScrollCollectionView/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -520,7 +520,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "ScrollCollectionView": "1.0.0",
+          "ScrollCollectionView": "1.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.618606"
         },
@@ -680,7 +680,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "ScrollCollectionView/1.0.0": {
+      "ScrollCollectionView/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -697,7 +697,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "ScrollCollectionView": "1.0.0",
+          "ScrollCollectionView": "1.0.1",
           "Xamarin.Essentials": "1.2.0",
           "Xamarin.Forms": "4.1.0.618606"
         },
@@ -712,7 +712,7 @@
   },
   "libraries": {
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "2THLW7FaShCmNl+3uCDulGYSgtJBoOzQzDUFW+V8+cyS7kGGhmaJLCtimP47SGZtJd6LsWTBr0a6BfkKaeX2JA==",
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
@@ -1046,7 +1046,7 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "ScrollCollectionView/1.0.0": {
+    "ScrollCollectionView/1.0.1": {
       "type": "project",
       "path": "../ScrollCollectionView/ScrollCollectionView.csproj",
       "msbuildProject": "../ScrollCollectionView/ScrollCollectionView.csproj"
@@ -1065,33 +1065,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/leowetterek/.nuget/packages/": {}
+    "C:\\Users\\Leo\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/ScrollCollectionViewTest.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest.iOS\\ScrollCollectionViewTest.iOS.csproj",
       "projectName": "ScrollCollectionViewTest.iOS",
-      "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/ScrollCollectionViewTest.iOS.csproj",
-      "packagesPath": "/Users/leowetterek/.nuget/packages/",
-      "outputPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/",
+      "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest.iOS\\ScrollCollectionViewTest.iOS.csproj",
+      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/leowetterek/.config/NuGet/NuGet.Config"
+        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "/Users/leowetterek/Projects/TestNuGets/LocalNuGets": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Leo\\Desktop": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/ScrollCollectionViewTest.csproj": {
-              "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/ScrollCollectionViewTest.csproj"
+            "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\ScrollCollectionViewTest.csproj": {
+              "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\ScrollCollectionViewTest.csproj"
             }
           }
         }
@@ -1128,7 +1135,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.2.0 to 1.1.0. Reference the package directly from the project to select a different version. \n ScrollCollectionViewTest.iOS -> ScrollCollectionViewTest -> Xamarin.Essentials (>= 1.2.0) \n ScrollCollectionViewTest.iOS -> Xamarin.Essentials (>= 1.1.0)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.2.0 to 1.1.0. Reference the package directly from the project to select a different version. \r\n ScrollCollectionViewTest.iOS -> ScrollCollectionViewTest -> Xamarin.Essentials (>= 1.2.0) \r\n ScrollCollectionViewTest.iOS -> Xamarin.Essentials (>= 1.1.0)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
@@ -1141,7 +1148,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.1.0.618606 to 4.1.0.483098-pre1. Reference the package directly from the project to select a different version. \n ScrollCollectionViewTest.iOS -> ScrollCollectionViewTest -> Xamarin.Forms (>= 4.1.0.618606) \n ScrollCollectionViewTest.iOS -> Xamarin.Forms (>= 4.1.0.483098-pre1)",
+      "message": "Detected package downgrade: Xamarin.Forms from 4.1.0.618606 to 4.1.0.483098-pre1. Reference the package directly from the project to select a different version. \r\n ScrollCollectionViewTest.iOS -> ScrollCollectionViewTest -> Xamarin.Forms (>= 4.1.0.618606) \r\n ScrollCollectionViewTest.iOS -> Xamarin.Forms (>= 4.1.0.483098-pre1)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

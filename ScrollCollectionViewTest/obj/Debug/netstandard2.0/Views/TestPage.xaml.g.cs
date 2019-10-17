@@ -13,7 +13,7 @@
 namespace ScrollCollectionViewTest.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/TestPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\TestPage.xaml")]
     public partial class TestPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Lelelo1</Authors>
     <Description>A control that mimic CollectionView but has dymanic flexible height.</Description>
     <PackageId>ScrollCollectionView</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Copyright>None</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://github.com/Lelelo1/ScrollCollectionView/blob/master/LICENSE</PackageLicenseUrl>
@@ -14,14 +14,11 @@
     <Summary>CollectionView with dynamic height</Summary>
     <PackageTags>Xamarin.Forms, CollectionView, list, height, dynamic, flexible, listView, control</PackageTags>
     <Title>ScrollCollectionView</Title>
-    <PackageReleaseNotes>ScrollCollectionView can handle add/remove, height is dynamic since ScrollView is used. Any DataTemplate can be used - using BuildProperty. And a MaxItemsShown property is added.</PackageReleaseNotes>
+    <PackageReleaseNotes>Removed Console logs</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.5-dev.8">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
   </ItemGroup>
 </Project>
