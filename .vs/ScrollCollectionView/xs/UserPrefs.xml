@@ -1,20 +1,20 @@
-﻿<Properties StartupConfiguration="{8429AB4F-7368-485B-82D4-5C0E8DFA0873}|Default">
-  <MonoDevelop.Ide.ItemProperties.ScrollCollectionViewTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E76C261E-9F00-4B94-ACA7-F6496E964AC1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ScrollCollectionViewTest/Views/TestPage.xaml">
+﻿<Properties StartupConfiguration="{A77377EF-92CC-47A2-BF6F-32E46567CAF9}|Default">
+  <MonoDevelop.Ide.ItemProperties.ScrollCollectionViewTest.Android PreferredExecutionTarget="Android.HA0THU4W" />
+  <MonoDevelop.Ide.ItemProperties.TestScrollCollectionView.Android FirstBuild="True" PreferredExecutionTarget="Android.androidapi23" />
+  <MonoDevelop.Ide.ItemProperties.TestScrollCollectionView.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.919ead2494a426d628884a9cc72e611613836d25" />
+  <MonoDevelop.Ide.ItemProperties.ScrollCollectionViewTest.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScrollCollectionView/ScrollCollectionView.cs">
     <Files>
-      <File FileName="ScrollCollectionViewTest/Views/TestPage.xaml.cs" Line="31" Column="55" />
-      <File FileName="ScrollCollectionViewTest/Views/TestPage.xaml" Line="34" Column="38" />
-      <File FileName="ScrollCollectionView/ScrollCollectionView.cs" Line="147" Column="59" />
+      <File FileName="ScrollCollectionViewTest/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="ScrollCollectionViewTest/MainPage.xaml.cs" Line="14" Column="1" />
+      <File FileName="ScrollCollectionView/ScrollCollectionView.cs" Line="88" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ScrollCollectionView" expanded="True">
-            <Node name="ScrollCollectionView" expanded="True" />
-            <Node name="ScrollCollectionViewTest" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="TestPage.xaml" expanded="True" selected="True" />
-              </Node>
+            <Node name="ScrollCollectionView" expanded="True">
+              <Node name="ScrollCollectionView.cs" selected="True" />
             </Node>
           </Node>
         </State>

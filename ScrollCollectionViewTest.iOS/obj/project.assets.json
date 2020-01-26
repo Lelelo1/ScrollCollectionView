@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Fody/3.1.4": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "NObservable/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.1.4",
+          "NObservable.Fody": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        }
+      },
+      "NObservable.Fody/0.1.1": {
+        "type": "package"
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -11,7 +33,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.1.0": {
+      "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -26,7 +48,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.483098-pre1": {
+      "Xamarin.Forms/4.3.0.908675": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -153,6 +175,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "Xamarin.Forms": "4.1.0.618606"
         },
         "compile": {
@@ -166,9 +189,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "ScrollCollectionView": "1.0.1",
-          "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.618606"
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
           "bin/placeholder/ScrollCollectionViewTest.dll": {}
@@ -179,6 +203,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Fody/3.1.4": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "NObservable/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.1.4",
+          "NObservable.Fody": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        }
+      },
+      "NObservable.Fody/0.1.1": {
+        "type": "package"
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -188,7 +234,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.1.0": {
+      "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -203,7 +249,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.483098-pre1": {
+      "Xamarin.Forms/4.3.0.908675": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -330,6 +376,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "Xamarin.Forms": "4.1.0.618606"
         },
         "compile": {
@@ -343,9 +390,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "ScrollCollectionView": "1.0.1",
-          "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.618606"
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
           "bin/placeholder/ScrollCollectionViewTest.dll": {}
@@ -356,6 +404,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Fody/3.1.4": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "NObservable/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.1.4",
+          "NObservable.Fody": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        }
+      },
+      "NObservable.Fody/0.1.1": {
+        "type": "package"
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -365,7 +435,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.1.0": {
+      "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -380,7 +450,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.483098-pre1": {
+      "Xamarin.Forms/4.3.0.908675": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -507,6 +577,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "Xamarin.Forms": "4.1.0.618606"
         },
         "compile": {
@@ -520,9 +591,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "ScrollCollectionView": "1.0.1",
-          "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.618606"
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
           "bin/placeholder/ScrollCollectionViewTest.dll": {}
@@ -533,6 +605,28 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Fody/3.1.4": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "NObservable/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.1.4",
+          "NObservable.Fody": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        }
+      },
+      "NObservable.Fody/0.1.1": {
+        "type": "package"
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -542,7 +636,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xamarin.Essentials/1.1.0": {
+      "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -557,7 +651,7 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.483098-pre1": {
+      "Xamarin.Forms/4.3.0.908675": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -684,6 +778,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "Xamarin.Forms": "4.1.0.618606"
         },
         "compile": {
@@ -697,9 +792,10 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "ScrollCollectionView": "1.0.1",
-          "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.618606"
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
           "bin/placeholder/ScrollCollectionViewTest.dll": {}
@@ -711,6 +807,78 @@
     }
   },
   "libraries": {
+    "Fody/3.1.4": {
+      "sha512": "yxU1N0QNo5Y5g6tk70rwJZy1eU3SMZg7k6RkvsMPekrE+2EoM3eQ8t29mYDrwmwgV8PfgMSun4ZW5PmPP3dTHA==",
+      "type": "package",
+      "path": "fody/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Fody.targets",
+        "fody.3.1.4.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/Fody.pdb",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyCommon.pdb",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyHelpers.pdb",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/FodyIsolated.pdb",
+        "netclassictask/Mono.Cecil.Mdb.dll",
+        "netclassictask/Mono.Cecil.Mdb.pdb",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/Fody.pdb",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyCommon.pdb",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyHelpers.pdb",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/FodyIsolated.pdb",
+        "netstandardtask/Mono.Cecil.Mdb.dll",
+        "netstandardtask/Mono.Cecil.Mdb.pdb",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    },
+    "NObservable/0.1.1": {
+      "sha512": "4IwHmgNIly4y+nZ6tRbQfNGfIbVLiJcnvGXFcZKHmso/hPlpmE1spJFYO+idqxmoCpPFk62uSL1ppVlEk9JpQg==",
+      "type": "package",
+      "path": "nobservable/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/NObservable.dll",
+        "lib/netstandard2.0/NObservable.dll",
+        "nobservable.0.1.1.nupkg.sha512",
+        "nobservable.nuspec"
+      ]
+    },
+    "NObservable.Fody/0.1.1": {
+      "sha512": "5WBY0wbDrHE5IW9R2WBQE28WLszmLPGqz97MaCqwB9RBGLLgkAYiPJJUgKz2mEVGnSs4JioXEfW7q3EGLpco7g==",
+      "type": "package",
+      "path": "nobservable.fody/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "netclassicweaver/NObservable.Fody.dll",
+        "netclassicweaver/NObservable.Fody.pdb",
+        "netstandardweaver/NObservable.Fody.dll",
+        "netstandardweaver/NObservable.Fody.pdb",
+        "nobservable.fody.0.1.1.nupkg.sha512",
+        "nobservable.fody.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -758,10 +926,10 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.1.0": {
-      "sha512": "W0XOt1dNMAE2POcsVotoKDDy5FdAOnR0qULKl6WI4kQEMxQ1sp84DsSU5iacV7oQUMuPhUBAm/3ywks0HO1QrQ==",
+    "Xamarin.Essentials/1.3.1": {
+      "sha512": "+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
       "type": "package",
-      "path": "xamarin.essentials/1.1.0",
+      "path": "xamarin.essentials/1.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -789,6 +957,9 @@
         "lib/netstandard2.0/Xamarin.Essentials.dll",
         "lib/netstandard2.0/Xamarin.Essentials.pdb",
         "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/tizen40/Xamarin.Essentials.dll",
+        "lib/tizen40/Xamarin.Essentials.pdb",
+        "lib/tizen40/Xamarin.Essentials.xml",
         "lib/uap10.0.16299/Xamarin.Essentials.dll",
         "lib/uap10.0.16299/Xamarin.Essentials.pdb",
         "lib/uap10.0.16299/Xamarin.Essentials.pri",
@@ -796,15 +967,21 @@
         "lib/xamarinios10/Xamarin.Essentials.dll",
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
+        "lib/xamarintvos10/Xamarin.Essentials.dll",
+        "lib/xamarintvos10/Xamarin.Essentials.pdb",
+        "lib/xamarintvos10/Xamarin.Essentials.xml",
+        "lib/xamarinwatchos10/Xamarin.Essentials.dll",
+        "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
+        "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.1.0.nupkg.sha512",
+        "xamarin.essentials.1.3.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.1.0.483098-pre1": {
-      "sha512": "gRzlunZlC3CE+1jWTKOJSkxm+cqyL3r71IJgJc2ffnBB0dberQTN9Z2UlkpoxM5ZgBSzG/zxH90R3JZqcoKI1g==",
+    "Xamarin.Forms/4.3.0.908675": {
+      "sha512": "kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
       "type": "package",
-      "path": "xamarin.forms/4.1.0.483098-pre1",
+      "path": "xamarin.forms/4.3.0.908675",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1024,16 +1201,19 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
@@ -1042,7 +1222,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.1.0.483098-pre1.nupkg.sha512",
+        "xamarin.forms.4.3.0.908675.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1060,45 +1240,38 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "ScrollCollectionViewTest >= 1.0.0",
-      "Xamarin.Essentials >= 1.1.0",
-      "Xamarin.Forms >= 4.1.0.483098-pre1"
+      "Xamarin.Essentials >= 1.3.1",
+      "Xamarin.Forms >= 4.3.0.908675"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/leowetterek/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest.iOS\\ScrollCollectionViewTest.iOS.csproj",
+      "projectUniqueName": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/ScrollCollectionViewTest.iOS.csproj",
       "projectName": "ScrollCollectionViewTest.iOS",
-      "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest.iOS\\ScrollCollectionViewTest.iOS.csproj",
-      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest.iOS\\obj\\",
+      "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/ScrollCollectionViewTest.iOS.csproj",
+      "packagesPath": "/Users/leowetterek/.nuget/packages/",
+      "outputPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/leowetterek/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Leo\\Desktop": {},
+        "/Users/leowetterek/Library/Mobile Documents/com~apple~CloudDocs/LocalNuGets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\ScrollCollectionViewTest.csproj": {
-              "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\ScrollCollectionViewTest.csproj"
+            "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/ScrollCollectionViewTest.csproj": {
+              "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/ScrollCollectionViewTest.csproj"
             }
           }
         }
@@ -1109,11 +1282,11 @@
         "dependencies": {
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.1.0, )"
+            "version": "[1.3.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.1.0.483098-pre1, )"
+            "version": "[4.3.0.908675, )"
           }
         }
       }
@@ -1129,33 +1302,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.2.0 to 1.1.0. Reference the package directly from the project to select a different version. \r\n ScrollCollectionViewTest.iOS -> ScrollCollectionViewTest -> Xamarin.Essentials (>= 1.2.0) \r\n ScrollCollectionViewTest.iOS -> Xamarin.Essentials (>= 1.1.0)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.1.0.618606 to 4.1.0.483098-pre1. Reference the package directly from the project to select a different version. \r\n ScrollCollectionViewTest.iOS -> ScrollCollectionViewTest -> Xamarin.Forms (>= 4.1.0.618606) \r\n ScrollCollectionViewTest.iOS -> Xamarin.Forms (>= 4.1.0.483098-pre1)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

@@ -20,5 +20,10 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
+    <PackageReference Include="NObservable" Version="0.1.1" />
+    <PackageReference Include="BindableProperty.Fody" Version="0.1.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>

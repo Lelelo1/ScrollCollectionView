@@ -9,21 +9,49 @@
     ".NETStandard,Version=v2.0/": {
       "ScrollCollectionViewTest/1.0.0": {
         "dependencies": {
+          "BindableProperty.Fody": "0.1.6",
           "NETStandard.Library": "2.0.3",
-          "ScrollCollectionView": "1.0.0",
-          "Xamarin.Essentials": "1.2.0",
-          "Xamarin.Forms": "4.1.0.618606"
+          "NObservable": "0.1.1",
+          "ScrollCollectionView": "1.0.1",
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.3.0.908675"
         },
         "runtime": {
           "ScrollCollectionViewTest.dll": {}
         }
       },
+      "BindableProperty.Fody/0.1.6": {
+        "dependencies": {
+          "Fody": "3.2.3",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.4/BindableProperty.dll": {
+            "assemblyVersion": "0.1.6.0",
+            "fileVersion": "0.1.6.0"
+          }
+        }
+      },
+      "Fody/3.2.3": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "NObservable/0.1.1": {
+        "dependencies": {
+          "Fody": "3.2.3",
+          "NObservable.Fody": "0.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NObservable.dll": {
+            "assemblyVersion": "0.1.1.0",
+            "fileVersion": "0.1.1.0"
+          }
+        }
+      },
+      "NObservable.Fody/0.1.1": {},
       "System.Numerics.Vectors/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {
@@ -32,7 +60,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.2.0": {
+      "Xamarin.Essentials/1.3.1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -43,25 +71,26 @@
           }
         }
       },
-      "Xamarin.Forms/4.1.0.618606": {
+      "Xamarin.Forms/4.3.0.908675": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.295"
+            "fileVersion": "4.3.0.336"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.295"
+            "fileVersion": "4.3.0.336"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.295"
+            "fileVersion": "4.3.0.336"
           }
         }
       },
-      "ScrollCollectionView/1.0.0": {
+      "ScrollCollectionView/1.0.1": {
         "dependencies": {
-          "Xamarin.Forms": "4.1.0.618606"
+          "NObservable": "0.1.1",
+          "Xamarin.Forms": "4.3.0.908675"
         },
         "runtime": {
           "ScrollCollectionView.dll": {}
@@ -74,6 +103,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BindableProperty.Fody/0.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pK89sHNGVm7oQOn+4nzg7+qobHZkRHrk5fb9PUGiOdecWOq8d40Bd1S8/U+kwQjPW1ud72kpYwgTFWqgHb7/5w==",
+      "path": "bindableproperty.fody/0.1.6",
+      "hashPath": "bindableproperty.fody.0.1.6.nupkg.sha512"
+    },
+    "Fody/3.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8eUx5qOLxlzf1u/upzONz5sYl/l9YAcy7b6Fxj7ntcgTmwNuQIfT/Wsmc8rj0wP1yEpssf9fcvUz4FZlgpM60A==",
+      "path": "fody/3.2.3",
+      "hashPath": "fody.3.2.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -89,6 +132,20 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "NObservable/0.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4IwHmgNIly4y+nZ6tRbQfNGfIbVLiJcnvGXFcZKHmso/hPlpmE1spJFYO+idqxmoCpPFk62uSL1ppVlEk9JpQg==",
+      "path": "nobservable/0.1.1",
+      "hashPath": "nobservable.0.1.1.nupkg.sha512"
+    },
+    "NObservable.Fody/0.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5WBY0wbDrHE5IW9R2WBQE28WLszmLPGqz97MaCqwB9RBGLLgkAYiPJJUgKz2mEVGnSs4JioXEfW7q3EGLpco7g==",
+      "path": "nobservable.fody/0.1.1",
+      "hashPath": "nobservable.fody.0.1.1.nupkg.sha512"
+    },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
@@ -96,21 +153,21 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.2.0": {
+    "Xamarin.Essentials/1.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-o3i5uAchUpAvAlJX0onYFFiDo6jpKl9vgvrdDtXEuEfum0UDrSx8oGGBUjlFyUoRpvWVumXwo0VS3AbzuwEofg==",
-      "path": "xamarin.essentials/1.2.0",
-      "hashPath": "xamarin.essentials.1.2.0.nupkg.sha512"
+      "sha512": "sha512-+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
+      "path": "xamarin.essentials/1.3.1",
+      "hashPath": "xamarin.essentials.1.3.1.nupkg.sha512"
     },
-    "Xamarin.Forms/4.1.0.618606": {
+    "Xamarin.Forms/4.3.0.908675": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
-      "path": "xamarin.forms/4.1.0.618606",
-      "hashPath": "xamarin.forms.4.1.0.618606.nupkg.sha512"
+      "sha512": "sha512-kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
+      "path": "xamarin.forms/4.3.0.908675",
+      "hashPath": "xamarin.forms.4.3.0.908675.nupkg.sha512"
     },
-    "ScrollCollectionView/1.0.0": {
+    "ScrollCollectionView/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

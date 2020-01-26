@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "BindableProperty.Fody/0.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.2.3",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/BindableProperty.dll": {}
+        }
+      },
+      "Fody/3.2.3": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -26,6 +45,22 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "NObservable/0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "3.1.4",
+          "NObservable.Fody": "0.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NObservable.dll": {}
+        }
+      },
+      "NObservable.Fody/0.1.1": {
+        "type": "package"
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -35,7 +70,7 @@
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
         }
       },
-      "Xamarin.Essentials/1.2.0": {
+      "Xamarin.Essentials/1.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -47,7 +82,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.618606": {
+      "Xamarin.Forms/4.3.0.908675": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -68,6 +103,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "NObservable": "0.1.1",
           "Xamarin.Forms": "4.1.0.618606"
         },
         "compile": {
@@ -80,6 +116,69 @@
     }
   },
   "libraries": {
+    "BindableProperty.Fody/0.1.6": {
+      "sha512": "pK89sHNGVm7oQOn+4nzg7+qobHZkRHrk5fb9PUGiOdecWOq8d40Bd1S8/U+kwQjPW1ud72kpYwgTFWqgHb7/5w==",
+      "type": "package",
+      "path": "bindableproperty.fody/0.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bindableproperty.fody.0.1.6.nupkg.sha512",
+        "bindableproperty.fody.nuspec",
+        "lib/net452/BindableProperty.dll",
+        "lib/net452/BindableProperty.xml",
+        "lib/netstandard1.4/BindableProperty.dll",
+        "lib/netstandard1.4/BindableProperty.xml",
+        "netclassicweaver/BindableProperty.Fody.dll",
+        "netclassicweaver/BindableProperty.Fody.pdb",
+        "netstandardweaver/BindableProperty.Fody.dll",
+        "netstandardweaver/BindableProperty.Fody.pdb"
+      ]
+    },
+    "Fody/3.2.3": {
+      "sha512": "8eUx5qOLxlzf1u/upzONz5sYl/l9YAcy7b6Fxj7ntcgTmwNuQIfT/Wsmc8rj0wP1yEpssf9fcvUz4FZlgpM60A==",
+      "type": "package",
+      "path": "fody/3.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Fody.targets",
+        "fody.3.2.3.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/Fody.pdb",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyCommon.pdb",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyHelpers.pdb",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/FodyIsolated.pdb",
+        "netclassictask/Mono.Cecil.Mdb.dll",
+        "netclassictask/Mono.Cecil.Mdb.pdb",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/Fody.pdb",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyCommon.pdb",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyHelpers.pdb",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/FodyIsolated.pdb",
+        "netstandardtask/Mono.Cecil.Mdb.dll",
+        "netstandardtask/Mono.Cecil.Mdb.pdb",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -223,6 +322,34 @@
         "netstandard.library.nuspec"
       ]
     },
+    "NObservable/0.1.1": {
+      "sha512": "4IwHmgNIly4y+nZ6tRbQfNGfIbVLiJcnvGXFcZKHmso/hPlpmE1spJFYO+idqxmoCpPFk62uSL1ppVlEk9JpQg==",
+      "type": "package",
+      "path": "nobservable/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/NObservable.dll",
+        "lib/netstandard2.0/NObservable.dll",
+        "nobservable.0.1.1.nupkg.sha512",
+        "nobservable.nuspec"
+      ]
+    },
+    "NObservable.Fody/0.1.1": {
+      "sha512": "5WBY0wbDrHE5IW9R2WBQE28WLszmLPGqz97MaCqwB9RBGLLgkAYiPJJUgKz2mEVGnSs4JioXEfW7q3EGLpco7g==",
+      "type": "package",
+      "path": "nobservable.fody/0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "netclassicweaver/NObservable.Fody.dll",
+        "netclassicweaver/NObservable.Fody.pdb",
+        "netstandardweaver/NObservable.Fody.dll",
+        "netstandardweaver/NObservable.Fody.pdb",
+        "nobservable.fody.0.1.1.nupkg.sha512",
+        "nobservable.fody.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -270,10 +397,10 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.2.0": {
-      "sha512": "o3i5uAchUpAvAlJX0onYFFiDo6jpKl9vgvrdDtXEuEfum0UDrSx8oGGBUjlFyUoRpvWVumXwo0VS3AbzuwEofg==",
+    "Xamarin.Essentials/1.3.1": {
+      "sha512": "+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
       "type": "package",
-      "path": "xamarin.essentials/1.2.0",
+      "path": "xamarin.essentials/1.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -301,6 +428,9 @@
         "lib/netstandard2.0/Xamarin.Essentials.dll",
         "lib/netstandard2.0/Xamarin.Essentials.pdb",
         "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/tizen40/Xamarin.Essentials.dll",
+        "lib/tizen40/Xamarin.Essentials.pdb",
+        "lib/tizen40/Xamarin.Essentials.xml",
         "lib/uap10.0.16299/Xamarin.Essentials.dll",
         "lib/uap10.0.16299/Xamarin.Essentials.pdb",
         "lib/uap10.0.16299/Xamarin.Essentials.pri",
@@ -308,15 +438,21 @@
         "lib/xamarinios10/Xamarin.Essentials.dll",
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
+        "lib/xamarintvos10/Xamarin.Essentials.dll",
+        "lib/xamarintvos10/Xamarin.Essentials.pdb",
+        "lib/xamarintvos10/Xamarin.Essentials.xml",
+        "lib/xamarinwatchos10/Xamarin.Essentials.dll",
+        "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
+        "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.2.0.nupkg.sha512",
+        "xamarin.essentials.1.3.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.1.0.618606": {
-      "sha512": "qJoOu0DiSzsfQj7nuMtKUcl39KsUxfU9yDJ5HU1flM+hnOrSD6IyDgKKxOkqIdmVwAL8R6hISz+b8MB4P5oDFw==",
+    "Xamarin.Forms/4.3.0.908675": {
+      "sha512": "kXrbXKJvXYF4cKjs1Jsb+pQFEnFGl0AONYSeABjgOJqN/o5Y4zC0XXQ68xiUI81PKQTuRB5F3oDom2t5ccJDZw==",
       "type": "package",
-      "path": "xamarin.forms/4.1.0.618606",
+      "path": "xamarin.forms/4.3.0.908675",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -536,17 +672,19 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
@@ -555,7 +693,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.1.0.618606.nupkg.sha512",
+        "xamarin.forms.4.3.0.908675.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -567,48 +705,45 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BindableProperty.Fody >= 0.1.6",
       "NETStandard.Library >= 2.0.3",
+      "NObservable >= 0.1.1",
       "ScrollCollectionView >= 1.0.1",
-      "Xamarin.Essentials >= 1.2.0",
-      "Xamarin.Forms >= 4.1.0.618606"
+      "Xamarin.Essentials >= 1.3.1",
+      "Xamarin.Forms >= 4.3.0.908675"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/leowetterek/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\ScrollCollectionViewTest.csproj",
+      "projectUniqueName": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/ScrollCollectionViewTest.csproj",
       "projectName": "ScrollCollectionViewTest",
-      "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\ScrollCollectionViewTest.csproj",
-      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionViewTest\\obj\\",
+      "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/ScrollCollectionViewTest.csproj",
+      "packagesPath": "/Users/leowetterek/.nuget/packages/",
+      "outputPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionViewTest/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/leowetterek/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Leo\\Desktop": {},
+        "/Users/leowetterek/Library/Mobile Documents/com~apple~CloudDocs/LocalNuGets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionView\\ScrollCollectionView.csproj": {
-              "projectPath": "C:\\Users\\Leo\\Projects\\ScrollCollectionView\\ScrollCollectionView\\ScrollCollectionView.csproj"
+            "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/ScrollCollectionView.csproj": {
+              "projectPath": "/Users/leowetterek/Projects/ScrollCollectionView/ScrollCollectionView/ScrollCollectionView.csproj"
             }
           }
         }
@@ -622,19 +757,29 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "BindableProperty.Fody": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.1.6, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
           },
+          "NObservable": {
+            "target": "Package",
+            "version": "[0.1.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.2.0, )"
+            "version": "[1.3.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.1.0.618606, )"
+            "version": "[4.3.0.908675, )"
           }
         },
         "imports": [
@@ -647,7 +792,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
       }
     }
   }
